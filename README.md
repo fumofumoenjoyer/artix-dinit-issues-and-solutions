@@ -50,6 +50,8 @@ Relogin or Reboot and check the output of ```dinitctl list```
 [{+}     ] system
 [{+}     ] dbus
 ```
+It it looks like that the issue should be fixed.
+
 ## No emoji fonts
 Follow this repo: https://github.com/androlabs/emoji-archlinux
 
