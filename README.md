@@ -36,10 +36,10 @@ I noticed thunar didnt show up my removable media or the trash folder, after som
 
 ![image](https://github.com/user-attachments/assets/90491653-2117-4d6f-aac5-92b479d301f3)
 
-run these commands to fix.
-
+Sadly theres no definitive fix, you can try running thunar like this:
 ```
-sudo pacman -S dbus-dinit gvfs
-sudo dinitctl -s enable dbus
+dbus-launch thunar
 ```
+This will fix the issue with that thunar instance, you can also edit the thunar.desktop file located in ```/usr/share/applications/thunar.desktop```
 
+And replace any lines with ```exec=thunar``` with ```dbus-launch thunar```
