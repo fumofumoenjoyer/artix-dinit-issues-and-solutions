@@ -28,7 +28,7 @@ smooth-recovery = true
 logfile         = /var/log/dinit/nvidia-dinit.log
 depends-on      = login.target
 ```
-This service is a scripted type, which means that its a oneshot which means it runs once everytime i login or boot (depending on the config)
+This service is a scripted type, which means that its a oneshot, which means it runs once everytime i login or boot (depending on the config)
 
 
 ##Thunar doesnt detect gvfs:
