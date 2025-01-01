@@ -42,7 +42,7 @@ sudo pacman -S turnstile turnstile-dinit
 ```
 Then enable the turnstiled service like this:
 ```
-dinitctl enable turnstiled
+sudo dinitctl enable turnstiled
 ```
 Relogin or Reboot and check the output of ```dinitctl list```
 ```
