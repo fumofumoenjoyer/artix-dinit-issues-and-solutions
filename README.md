@@ -1,7 +1,7 @@
 # artix-dinit-issues-and-solutions
 some issues and solutions i found
 
-##Cant run services
+## Cant run services
 You need to create a custom service or get a package for the service you want for example:
 ```
 sudo pacman -S sddm-dinit
