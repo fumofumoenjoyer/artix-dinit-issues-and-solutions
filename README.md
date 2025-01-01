@@ -36,10 +36,18 @@ I noticed thunar didnt show up my removable media or the trash folder, after som
 
 ![image](https://github.com/user-attachments/assets/90491653-2117-4d6f-aac5-92b479d301f3)
 
-Sadly theres no definitive fix, you can try running thunar like this:
+This is most probably because dinit cant enable the dbus service as an user, to fix this install this:
 ```
-dbus-launch thunar
+sudo pacman -S turnstile turnstile-dinit
 ```
-This will fix the issue with that thunar instance, you can also edit the thunar.desktop file located in ```/usr/share/applications/thunar.desktop```
-
-And replace any lines with ```exec=thunar``` with ```dbus-launch thunar```
+Then enable the turnstiled service like this:
+```
+dinitctl enable turnstiled
+```
+Relogin or Reboot and check the output of ```dinitctl list```
+```
+[[+]     ] boot
+[{+}     ] system
+[{+}     ] dbus
+```
+## This is it for now, i'll be back.
