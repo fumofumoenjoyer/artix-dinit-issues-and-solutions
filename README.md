@@ -31,9 +31,15 @@ depends-on      = login.target
 This service is a scripted type, which means that its a oneshot, which means it runs once everytime i login or boot (depending on the config)
 
 
-##Thunar doesnt detect gvfs:
+## Thunar doesnt detect gvfs:
+I noticed thunar didnt show up my removable media or the trash folder, after some websearches i stumbled upon this error message on Thunar's preferences
+
+![image](https://github.com/user-attachments/assets/90491653-2117-4d6f-aac5-92b479d301f3)
+
+run these commands to fix.
+
 ```
-sudo pacman -S dbus-dinit
+sudo pacman -S dbus-dinit gvfs
 sudo dinitctl -s enable dbus
 ```
 
