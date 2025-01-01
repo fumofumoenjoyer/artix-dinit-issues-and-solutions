@@ -1,5 +1,5 @@
 # artix-dinit-issues-and-solutions
-some issues and solutions i found
+Some issues and solutions i found designed for absolute noobs like me.
 
 ## Cant run services
 You need to create a custom service or get a package for the service you want for example:
