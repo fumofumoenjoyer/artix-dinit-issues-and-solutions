@@ -55,5 +55,19 @@ It it looks like that the issue should be fixed.
 ## No emoji fonts
 Follow this repo: https://github.com/androlabs/emoji-archlinux
 
+## Unsynced clock
+Install ntpd and its service:
+```
+sudo pacman -S ntp ntp-dinit
+```
+Enable the service:
+```
+sudo dinitctl enable ntpd 
+```
+Run this command to sync:
+```
+sudo ntpdate pool.ntp.org
+```
+
 
 ## This is it for now, i'll be back.
