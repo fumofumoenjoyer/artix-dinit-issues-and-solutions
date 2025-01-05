@@ -44,6 +44,14 @@ Then enable the turnstiled service like this:
 ```
 sudo dinitctl enable turnstiled
 ```
+Reboot and enable dbus for as root and as a user
+
+```
+sudo dinitctl enable dbus
+```
+```
+dinitctl enable dbus
+```
 Relogin or Reboot and check the output of ```dinitctl list```
 ```
 [[+]     ] boot
