@@ -38,7 +38,7 @@ I noticed thunar didnt show up my removable media or the trash folder, after som
 
 This is most probably because dinit cant enable the dbus service as an user, to fix this install this:
 ```
-sudo pacman -S turnstile turnstile-dinit
+sudo pacman -S turnstile turnstile-dinit dbus-dinit dbus-dinit-user
 ```
 Then enable the turnstiled service like this:
 ```
