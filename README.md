@@ -77,5 +77,13 @@ Run this command to sync:
 sudo ntpdate pool.ntp.org
 ```
 
+## No Audio (pipewire)
 
+```
+sudo pacman -S pipewire pipewire-jack wireplumber wireplumber-dinit
+```
+```
+sudo dinitctl enable wireplumber
+dinitctl enable wireplumber
+```
 ## This is it for now, i'll be back.
