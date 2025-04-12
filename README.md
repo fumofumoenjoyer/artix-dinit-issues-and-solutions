@@ -98,4 +98,11 @@ dinitctl enable wireplumber
 sudo dinitctl enable pipewire-pulse
 dinitctl enable pipewire-pulse
 ```
+
+## Electron apps GPU process isn't usable. Goodbye.
+```
+sudo pacman -S libva-nvidia-driver
+```
+
+
 ## This is it for now, i'll be back.
