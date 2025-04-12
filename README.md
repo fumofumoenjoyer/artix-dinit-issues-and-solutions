@@ -78,12 +78,24 @@ sudo ntpdate pool.ntp.org
 ```
 
 ## No Audio (pipewire)
-
 ```
-sudo pacman -S pipewire pipewire-jack wireplumber wireplumber-dinit
+sudo pacman -S turnstile turnstile-dinit
+```
+Then enable the turnstiled service like this:
+```
+sudo dinitctl enable turnstiled
+```
+Reboot and
+```
+sudo pacman -R pulseaudio-bluetooth pulseaudio-zeroconf
+sudo pacman -S pipewire pipewire-jack pipewire-pulse wireplumber pipewire-dinit pipewire-jack-dinit pipewire-pulse-dinit wireplumber-dinit
 ```
 ```
+sudo dinitctl enable pipewire
+dinitctl enable pipewire
 sudo dinitctl enable wireplumber
 dinitctl enable wireplumber
+sudo dinitctl enable pipewire-pulse
+dinitctl enable pipewire-pulse
 ```
 ## This is it for now, i'll be back.
